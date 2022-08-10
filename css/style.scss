@@ -1,0 +1,55 @@
+@import "./variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $primaryFont;
+}
+
+body {
+  background-color: aqua;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondaryFont;
+}
+
+img {
+  width: 100%;
+}
+
+.main-slider {
+  .single-carousel {
+    position: relative;
+    img {
+      height: 100vh;
+    }
+    .arrow-button {
+      background-color: aqua;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      i {
+        font-size: 30px;
+      }
+    }
+    .custom-prev {
+      left: 50px;
+    }
+    .custom-next {
+      right: 50px;
+    }
+  }
+}
