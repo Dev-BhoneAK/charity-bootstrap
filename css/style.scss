@@ -7,10 +7,6 @@
   font-family: $primaryFont;
 }
 
-body {
-  background-color: aqua;
-}
-
 h1,
 h2,
 h3,
@@ -22,34 +18,71 @@ h6 {
 
 img {
   width: 100%;
+  object-fit: cover;
 }
 
-.main-slider {
-  .single-carousel {
-    position: relative;
-    img {
-      height: 100vh;
+header {
+  .navbar {
+    width: 100%;
+    z-index: 2;
+    a {
+      color: #fff;
     }
-    .arrow-button {
-      background-color: aqua;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 50%;
-      z-index: 2;
-      i {
-        font-size: 30px;
+    a.nav-link {
+      color: #fff;
+    }
+  }
+  .main-slider {
+    .single-carousel {
+      position: relative;
+      .slider-container {
+        background: rgba(0, 0, 0, 0.6);
+        img {
+          height: 100vh;
+          mix-blend-mode: overlay;
+        }
+        .content-action {
+          max-width: clamp(23.75rem, 8.3088rem + 61.7647vw, 50rem);
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: #fff;
+          h1 {
+            font-size: clamp(1.875rem, -0.6985rem + 10.2941vw, 6.25rem);
+          }
+          p {
+            color: #c4c4c4;
+            font-size: 20px;
+          }
+          .action-btn {
+            background-color: #ffa416;
+          }
+        }
       }
-    }
-    .custom-prev {
-      left: 50px;
-    }
-    .custom-next {
-      right: 50px;
+      .arrow-button {
+        background-color: #5d5d5d;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        z-index: 2; // why z-index
+        i {
+          font-size: 15px;
+        }
+      }
+      .custom-prev {
+        left: 50px;
+      }
+      .custom-next {
+        right: 50px;
+      }
     }
   }
 }
