@@ -40,8 +40,10 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="position-relative">
+      <nav
+        class="navbar navbar-expand-lg position-absolute top-0 bg-transparent"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button
@@ -73,25 +75,59 @@
           </div>
         </div>
       </nav>
-    </header>
-
-    <section class="main-slider">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="single-carousel">
-            <div>
-              <img src="assets/images/main-slider-2-1.jpeg" alt="" />
+      <section class="main-slider">
+        <div class="single-carousel">
+          <div class="slider-container">
+            <img src="assets/images/main-slider-2-1.jpeg" alt="" />
+            <div class="content-action">
+              <h1>Every Good Act is a Charity</h1>
+              <p>We are here to support you every step of the way</p>
+              <button class="btn action-btn rounded-pill p-3">
+                Discover More
+              </button>
             </div>
-            <div>
-              <img src="assets/images/main-slider-2-2.jpeg" alt="" />
+          </div>
+          <div class="slider-container">
+            <img src="assets/images/main-slider-2-2.jpeg" alt="" />
+            <div class="content-action">
+              <h1>Every Good Act is a Charity</h1>
+              <p>We are here to support you every step of the way</p>
+              <button class="btn action-btn rounded-pill p-3">
+                Discover More
+              </button>
             </div>
-            <div>
-              <img src="assets/images/main-slider-2-3.jpeg" alt="" />
+          </div>
+          <div class="slider-container">
+            <img src="assets/images/main-slider-2-3.jpeg" alt="" />
+            <div class="content-action">
+              <h1>Every Good Act is a Charity</h1>
+              <p>We are here to support you every step of the way</p>
+              <button class="btn action-btn rounded-pill p-3">
+                Discover More
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </header>
+
+    <!-- <section class="main-slider"> -->
+    <!-- <div class="container-fluid g-0"> -->
+    <!-- <div class="row"> -->
+    <!-- <div class="single-carousel"> -->
+    <!-- <div> -->
+    <!-- <img src="assets/images/main-slider-2-1.jpeg" alt="" /> -->
+    <!-- </div> -->
+    <!-- <div> -->
+    <!-- <img src="assets/images/main-slider-2-2.jpeg" alt="" /> -->
+    <!-- </div> -->
+    <!-- <div> -->
+    <!-- <img src="assets/images/main-slider-2-3.jpeg" alt="" /> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -116,6 +152,14 @@
             "<div class='custom-prev arrow-button'><i class='fa-solid fa-angle-left'></i></div>",
           nextArrow:
             "<div class='custom-next arrow-button'><i class='fa-solid fa-angle-right'></i></div>",
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+              },
+            },
+          ],
         });
       });
     </script>
