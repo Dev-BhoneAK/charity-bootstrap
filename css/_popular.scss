@@ -1,0 +1,48 @@
+#popular {
+  h2 {
+    font-size: clamp(1.5625rem, 0.6434rem + 3.6765vw, 3.125rem);
+  }
+  .card-container {
+    border: 1px solid #d1ceca;
+    border-radius: 10px;
+    //   margin-right: 20px;
+    .img-container {
+      img {
+        border-radius: 10px 10px 0 0;
+      }
+      .category-container {
+        background-color: $secondaryColor;
+        bottom: 25px;
+        left: 25px;
+        p {
+          margin: 0;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #fff;
+        }
+      }
+    }
+    .content-container {
+      h4 {
+        font-size: clamp(0.875rem, 0.5074rem + 1.4706vw, 1.5rem);
+      }
+      p {
+        color: #727272;
+      }
+    }
+    .progress-container {
+      background-color: #f2f0ec;
+      .statistics-container {
+        .currency {
+          font-size: 18px;
+          color: #000;
+        }
+        p {
+          font-size: 14px;
+          color: #727272;
+        }
+      }
+    }
+  }
+}
