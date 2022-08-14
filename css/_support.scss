@@ -1,0 +1,38 @@
+@import "./variables";
+
+#support {
+  position: relative;
+  .support-background {
+    background: url("../assets/images/we-use-bg.jpeg");
+    background-color: rgba(0, 0, 0, 1);
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    background-blend-mode: luminosity;
+    min-height: 60vh;
+    .content-container {
+      z-index: 1;
+      max-width: clamp(23.75rem, -6.3971rem + 120.5882vw, 75rem);
+      h2 {
+        font-size: clamp(1.875rem, 0.4044rem + 5.8824vw, 4.375rem);
+        color: $primaryColor;
+        span {
+          font-family: $secondaryFont;
+          color: $secondaryColor;
+        }
+      }
+      .action-btn {
+        background-color: $secondaryColor;
+      }
+    }
+  }
+  .support-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
