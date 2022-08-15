@@ -1,0 +1,41 @@
+@import "./variables";
+#articles {
+  h2 {
+    font-size: clamp(1.5625rem, 0.6434rem + 3.6765vw, 3.125rem);
+  }
+  .card-container {
+    border: 1px solid #d1ceca;
+    border-radius: 10px;
+    .img-container {
+      img {
+        border-radius: 10px 10px 0 0;
+      }
+      .date-container {
+        background-color: $secondaryColor;
+        top: 20px;
+        left: 20px;
+        p {
+          margin: 0;
+          color: $primaryColor;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .content-container {
+      h4 {
+        font-size: clamp(0.875rem, 0.5074rem + 1.4706vw, 1.5rem);
+      }
+      p {
+        color: #727272;
+        margin: 0;
+      }
+    }
+    .read-more {
+      p {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
