@@ -3,10 +3,11 @@
     position: relative;
     height: 60vh;
     background: url("../assets/images/site-footer-bg.jpeg");
-    background-color: #000;
+    background-color: #343434;
     background-blend-mode: luminosity;
     background-position: center;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $primaryColor;
     .footer-content {
       position: relative;
@@ -31,7 +32,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(52, 52, 52, 0.9);
   }
 }
 
