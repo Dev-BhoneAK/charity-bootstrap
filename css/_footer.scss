@@ -17,7 +17,20 @@
           font-size: clamp(1rem, 0.4118rem + 2.3529vw, 2rem);
         }
         button {
+          display: inline-block;
+          position: relative;
           background-color: $secondaryColor;
+          i {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #fff;
+            color: $secondaryColor;
+            margin-right: 16px;
+            line-height: 35px;
+          }
         }
       }
       li {
