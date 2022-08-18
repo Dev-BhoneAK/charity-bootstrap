@@ -50,9 +50,12 @@
 }
 
 .down-arrow {
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 7px solid var(--progress-number-bg, #5f5f5f);
+  /* border-left: 6px solid transparent;
+  border-right: 6px solid transparent; */
+  border-left: 6px solid #f2f0ec;
+  border-right: 6px solid #f2f0ec;
+  border-top: 7px solid transparent;
+  /* border-top: 7px solid var(--progress-number-bg, #5f5f5f);f2f0ec */
   position: absolute;
   left: 50%;
   top: 100%;
