@@ -14,27 +14,81 @@
       z-index: 1;
       .donate {
         h3 {
-          font-size: clamp(1rem, 0.4118rem + 2.3529vw, 2rem);
+          font-size: clamp(0.9rem, 0.4118rem + 2.3529vw, 1.8rem);
         }
+        // button {
+        //   display: inline-block;
+        //   position: relative;
+        //   background-color: $secondaryColor;
+        //   i {
+        //     display: inline-block;
+        //     width: 30px;
+        //     height: 30px;
+        //     border-radius: 50%;
+        //     text-align: center;
+        //     background-color: #fff;
+        //     color: $secondaryColor;
+        //     margin-right: 16px;
+        //     line-height: 35px;
+        //   }
+        // }
         button {
-          display: inline-block;
-          position: relative;
           background-color: $secondaryColor;
-          i {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            text-align: center;
-            background-color: #fff;
-            color: $secondaryColor;
-            margin-right: 16px;
-            line-height: 35px;
+          color: $primaryColor;
+          border: 0;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-container {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              text-align: center;
+              background-color: $primaryColor;
+              color: $secondaryColor;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 16px;
+            }
+            .text-container {
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 13px;
+              letter-spacing: 0.2ch;
+              margin-right: 20px;
+            }
           }
         }
       }
       li {
         color: #8b8b8b;
+        font-size: clamp(0.4rem, 0.4118rem + 2.3529vw, 0.9rem);
+        font-weight: bold;
+        margin-bottom: 0.9rem;
+      }
+
+      h4 {
+        font-size: clamp(0.7rem, 0.4118rem + 2.3529vw, 1.4rem);
+        margin-bottom: 1.3rem;
+      }
+
+      .contact {
+        li {
+          padding-bottom: 10px;
+          border-bottom: 1px solid #434242;
+          i {
+            margin-right: 10px;
+          }
+        }
+        li:last-child {
+          border: 0;
+          //   span {
+          //     display: inline-block;
+          //     text-align: justify;
+          //   }
+        }
       }
     }
   }
@@ -50,7 +104,9 @@
 }
 
 @media (max-width: 768px) {
-  .footer-background {
-    height: auto;
+  #footer {
+    .footer-background {
+      height: 120vh; // needs to ask
+    }
   }
 }
