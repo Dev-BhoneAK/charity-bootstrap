@@ -37,6 +37,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Fredoka+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/animated-counter-prograssbar.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -109,6 +111,40 @@
       </section>
     </header>
 
+    <!-- <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="progressbar-item">
+            <h4 class="progress-title">Photoshop</h4>
+            <div progress-bar data-percentage="30%">
+              <div class="progress-number">
+                <div class="progress-number-mark">
+                  <span class="percent"></span>
+                  <span class="down-arrow"></span>
+                </div>
+              </div>
+              <div class="progress-bg">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progressbar-item">
+      <h4 class="progress-title">Photoshop</h4>
+      <div progress-bar data-percentage="30%">
+        <div class="progress-number">
+          <div class="progress-number-mark">
+            <span class="percent"></span>
+            <span class="down-arrow"></span>
+          </div>
+        </div>
+        <div class="progress-bg">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div> -->
     <!--Popular Section-->
     <section id="popular">
       <div class="container my-5">
@@ -134,7 +170,7 @@
                 </p>
               </div>
               <div class="progress-container px-3 py-3">
-                <div class="progress my-4" style="height: 5px">
+                <!-- <div class="progress my-4" style="height: 5px">
                   <div
                     class="progress-bar bg-warning"
                     role="progressbar"
@@ -151,6 +187,20 @@
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
+                </div> -->
+
+                <div class="progressbar-item">
+                  <div progress-bar data-percentage="30%">
+                    <div class="progress-number">
+                      <div class="progress-number-mark bg-warning">
+                        <span class="percent"></span>
+                        <span class="down-arrow bg-warning"></span>
+                      </div>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-fill bg-warning"></div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="statistics-container d-flex align-items-center justify-content-between"
@@ -179,23 +229,18 @@
                 </p>
               </div>
               <div class="progress-container px-3 py-3">
-                <div class="progress my-4" style="height: 5px">
-                  <div
-                    class="progress-bar bg-info"
-                    role="progressbar"
-                    style="width: 50%"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                  <div
-                    class="progress-bar bg-white"
-                    role="progressbar"
-                    style="width: 75%"
-                    aria-valuenow="20"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                <div class="progressbar-item">
+                  <div progress-bar data-percentage="78%">
+                    <div class="progress-number">
+                      <div class="progress-number-mark bg-info">
+                        <span class="percent"></span>
+                        <span class="down-arrow bg-info"></span>
+                      </div>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-fill bg-info"></div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="statistics-container d-flex align-items-center justify-content-between"
@@ -224,23 +269,18 @@
                 </p>
               </div>
               <div class="progress-container px-3 py-3">
-                <div class="progress my-4" style="height: 5px">
-                  <div
-                    class="progress-bar bg-success"
-                    role="progressbar"
-                    style="width: 75%"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                  <div
-                    class="progress-bar bg-white"
-                    role="progressbar"
-                    style="width: 75%"
-                    aria-valuenow="20"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                <div class="progressbar-item">
+                  <div progress-bar data-percentage="95%">
+                    <div class="progress-number">
+                      <div class="progress-number-mark bg-success">
+                        <span class="percent"></span>
+                        <span class="down-arrow bg-success"></span>
+                      </div>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-fill bg-success"></div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="statistics-container d-flex align-items-center justify-content-between"
@@ -279,7 +319,11 @@
           <h2>Join Upcoming Events</h2>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+          <div
+            class="col-lg-4 col-md-12 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="card-container">
               <div class="img-container position-relative">
                 <img src="assets/images/events-img-1.jpeg" alt="" />
@@ -299,7 +343,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+          <div
+            class="col-lg-4 col-md-12 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="card-container">
               <div class="img-container position-relative">
                 <img src="assets/images/events-img-2.jpeg" alt="" />
@@ -319,7 +367,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
+          <div
+            class="col-lg-4 col-md-12"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div class="card-container">
               <div class="img-container position-relative">
                 <img src="assets/images/events-img-3.jpeg" alt="" />
@@ -503,6 +555,44 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // useClassNames: true,
+        // initClassName: false,
+        // animatedClassName: "progress-number-mark",
+      });
+      document.addEventListener("aos:in", ({ detail }) => {
+        console.log("animated in", detail);
+        // $("[progress-bar]").each(function () {
+        //   $(this)
+        //     .find(".progress-fill")
+        //     .animate(
+        //       {
+        //         width: $(this).attr("data-percentage"),
+        //       },
+        //       2000
+        //     );
+
+        //   $(this)
+        //     .find(".progress-number-mark")
+        //     .animate(
+        //       { left: $(this).attr("data-percentage") },
+        //       {
+        //         duration: 2000,
+        //         step: function (now, fx) {
+        //           var data = Math.round(now);
+        //           $(this)
+        //             .find(".percent")
+        //             .html(data + "%");
+        //         },
+        //       }
+        //     );
+        // });
+      });
+    </script>
+    <script src="js/animated-counter-prograssbar.js"></script>
+
     <script>
       $(document).ready(function () {
         $(".single-carousel").slick({
